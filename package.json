@@ -1,0 +1,46 @@
+{
+  "name": "is-git",
+  "version": "0.0.0",
+  "description": "check if dir is directory or not",
+   "homepage": "yashprit.github.io",
+    
+    "bugs": {
+      "url": "yashprit.github.com/is-git/issues"
+  },
+  "author": {  "url": "yashprit.github.io"  ,  "name": "Yashprit"  ,  "email": "yashprit@gmail.com" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "yashprit.github.com/is-git"
+  },
+  "license": "MIT",
+  "files": [
+    "lib/index.js"  ,
+        "cli.js" 
+  ],
+  "keywords": [
+    "is-git"  ,
+        "git"  ,
+        "github"  ,
+        "dir"  ,
+        "is-git" 
+  ],
+  "dependencies": { 
+        "meow": "^2.0.0" 
+  },
+  "devDependencies": { 
+        "gulp": "^3.8.11",
+      "gulp-cli": "^0.1.5",
+      "gulp-watch": "^4.1.1",
+      "gulp-jshint": "^1.9.2"  ,
+          "gulp-nodeunit": "^0.0.5"  ,
+      "jshint-stylish": "^1.0.0" 
+  },
+  "scripts": { 
+      
+       "test": "gulp test" 
+  }  ,
+      "bin": {
+        "is-git": "cli.js"
+    } 
+}
