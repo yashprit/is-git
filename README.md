@@ -9,9 +9,6 @@
 $ npm install --save is-git
 ```
 
-## Usage
-
-
 ## Example
 
 ### JavaScript
@@ -25,7 +22,7 @@ isGit("*"); //true or false
 isGit(); //true or false
 ```
 
-### Command Line reference 
+### Command Line reference
 
 ```sh
 $ npm install --g git-scope-config
