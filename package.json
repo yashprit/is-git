@@ -1,6 +1,6 @@
 {
   "name": "is-git",
-  "version": "0.0.0-alpha",
+  "version": "0.0.0-beta",
   "description": "check if dir is directory or not",
   "homepage": "yashprit.github.io",
   "bugs": {
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "files": [
-    "lib/index.js",
+    "index.js",
     "cli.js"
   ],
   "keywords": [
