@@ -1,6 +1,5 @@
 'use strict';
 
-var exists = require("fs").exists;
 var parser = require('iniparser').parse;
 
 
@@ -13,7 +12,7 @@ var isGit = function(path, cb) {
   //if path is function, than api is called only with callback,
   //path is current directory
   if (typeof path === "function") {
-    callback = path;
+    cb = path;
     path = "*";
   }
 

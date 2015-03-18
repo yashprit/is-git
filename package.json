@@ -1,10 +1,10 @@
 {
   "name": "is-git",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha",
   "description": "check if dir is directory or not",
   "homepage": "yashprit.github.io",
   "bugs": {
-    "url": "yashprit.github.com/is-git/issues"
+    "url": "yashprit/is-git/issues"
   },
   "author": {
     "url": "yashprit.github.io",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "yashprit.github.com/is-git"
+    "url": "yashprit/is-git"
   },
   "license": "MIT",
   "files": [
@@ -28,19 +28,13 @@
     "is-git"
   ],
   "dependencies": {
-    "iniparser": "^1.0.5",
-    "meow": "^2.0.0"
+    "iniparser": "^1.0.5"
   },
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-cli": "^0.1.5",
-    "gulp-watch": "^4.1.1",
-    "gulp-jshint": "^1.9.2",
-    "gulp-nodeunit": "^0.0.5",
-    "jshint-stylish": "^1.0.0"
+    "mocha": "*"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha"
   },
   "bin": {
     "is-git": "cli.js"

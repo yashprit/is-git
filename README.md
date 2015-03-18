@@ -11,7 +11,10 @@ $ npm install --save is-git
 
 ## Usage
 
-##### api
+
+## Example
+
+### JavaScript
 
 ```js
 var isGit = require('is-git');
@@ -22,17 +25,36 @@ isGit("*"); //true or false
 isGit(); //true or false
 ```
 
-##### cli
+### Command Line reference 
 
 ```sh
-$ npm install --global is-git
-$ is-git (check in current working directory)
+$ npm install --g git-scope-config
+$ is-git --path path/to/git/folder
 ```
 
+## Methods
 
-## Report Issue
+```js
+var isGit = require('is-git');
+isGit("/path/folder"); // or false
 
-[issue-url]
+isGit("*"); //true or false
+
+isGit(); //true or false
+```
+
+### isGit([path], cb)
+
+Check if current folder is git folder or not
+
+
+## Run Test
+```sh
+npm test
+```
+
+## Contribute or Report Issue
+For bugs and feature requests, [please create an issue][issue-url].
 
 
 ## License
