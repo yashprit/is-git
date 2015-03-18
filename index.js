@@ -1,7 +1,7 @@
 'use strict';
 
 var parser = require('iniparser').parse;
-
+var exists = require('fs').exists;
 
 var getFolderName = function(path) {
   return path.split("/").pop();
@@ -38,25 +38,30 @@ var isGit = function(path, cb) {
   //default value for callback
   cb = cb || function(err, data) {
     if (err) {
-      console.log(err);
+      console.error(err);
       return
     }
     console.log(data)
     return data;
   }
 
-  parser(dir, function(err, data) {
-    if (err) {
-      cb(err);
-      return;
-    }
-    //read for url and match with foldername
-    if (data && data['remote "origin"'].url.search(folder) > -1) {
-      cb(null, true);
+  exists(dir, function(exists) {
+    if (exists) {
+      parser(dir, function(err, data) {
+        if (err) {
+          cb(new Error("Error ocured while parsing config file"));
+        }
+        //read for url and match with foldername
+        if (data && data['remote "origin"'].url.search(folder) > -1) {
+          cb(null, true);
+        } else {
+          cb(null, false);
+        }
+        return;
+      });
     } else {
       cb(null, false);
     }
-    return;
   });
 }
 
