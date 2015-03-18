@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "check if dir is directory or not",
   "homepage": "yashprit.github.io",
-
   "bugs": {
     "url": "yashprit.github.com/is-git/issues"
   },
@@ -29,6 +28,7 @@
     "is-git"
   ],
   "dependencies": {
+    "iniparser": "^1.0.5",
     "meow": "^2.0.0"
   },
   "devDependencies": {

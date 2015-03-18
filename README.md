@@ -9,10 +9,9 @@
 $ npm install --save is-git
 ```
 
-
 ## Usage
 
-##### NodeJS
+##### api
 
 ```js
 var isGit = require('is-git');
@@ -27,7 +26,7 @@ isGit(); //true or false
 
 ```sh
 $ npm install --global is-git
-$ is-git --path //check in current working directory
+$ is-git (check in current working directory)
 ```
 
 
