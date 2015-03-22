@@ -8,9 +8,6 @@ var getFolderName = function(path) {
 }
 
 var isGit = function(path, cb) {
-  //javascript does not support overloading, doing it manually
-  //if path is function, than api is called only with callback,
-  //path is current directory
   if (typeof path === "function") {
     cb = path;
     path = "*";
@@ -51,8 +48,8 @@ var isGit = function(path, cb) {
         if (err) {
           cb(new Error("Error ocured while parsing config file"));
         }
-        //read for url and match with foldername
-        if (data && data['remote "origin"'].url.search(folder) > -1) {
+        //check for
+        if (data && data.core) {
           cb(null, true);
         } else {
           cb(null, false);
