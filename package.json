@@ -1,6 +1,6 @@
 {
   "name": "is-git",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "check if dir is directory or not",
   "homepage": "yashprit.github.io",
   "bugs": {
