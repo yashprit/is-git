@@ -3,11 +3,19 @@
 import {t} from 'germs'
 import isGit from './index'
 
-test(`should work`, (done) => {
+test(`should work with cwd`, (done) => {
   const current = process.cwd()
   console.log(`current`, current)
   isGit(current).fork(done, (data) => {
     t.truthy(data)
+    done()
+  })
+})
+
+test(`should fail when given /`, (done) => {
+  const current = `/`
+  isGit(current).fork(done, (data) => {
+    t.falsy(data)
     done()
   })
 })
