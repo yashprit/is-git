@@ -1,23 +1,14 @@
 {
-  "name": "is-git",
+  "name": "@definitelyhyped/is-git",
   "version": "1.0.0",
   "description": "check if dir is directory or not",
-  "homepage": "yashprit.github.io",
-  "bugs": {
-    "url": "yashprit/is-git/issues"
-  },
-  "author": {
-    "url": "yashprit.github.io",
-    "name": "Yashprit",
-    "email": "yashprit@gmail.com"
-  },
   "repository": {
     "type": "git",
-    "url": "yashprit/is-git"
+    "url": "definitelyhyped/is-git"
   },
   "license": "MIT",
   "files": [
-    "index.js",
+    "is-git.js",
     "cli.js"
   ],
   "keywords": [
@@ -28,13 +19,16 @@
     "is-git"
   ],
   "dependencies": {
-    "iniparser": "^1.0.5"
+    "f-utility": "^3.5.1",
+    "fluture": "^7.2.2"
   },
   "devDependencies": {
-    "mocha": "*"
+    "germs": "^0.1.9",
+    "jest": "^21.2.1",
+    "jest-t-assert": "^0.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "bin": {
     "is-git": "cli.js"

@@ -1,0 +1,9 @@
+{
+  "presets": ["es2015", "stage-2", "fbjs"],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-es2015-destructuring",
+    "transform-async-to-generator",
+    "syntax-async-functions"
+  ]
+}
