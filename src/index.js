@@ -22,10 +22,6 @@ const checkPathExists = Future.encaseP(pathExists)
 const parser = (cwd) => new Future(
   (reject, resolve) => parseGitConfig(
     cwd,
-    // {
-    //   cwd,
-    //   path: `.git/config`
-    // },
     (err, config) => (
       err ?
         reject(err) :
